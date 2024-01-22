@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  scrool-padding-top: 1rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #727272 ;
+  --text-color: #020102;
+  --bg-color: #fff;
+}
+section{
+  padding: 4rem 0 2rem;
+}
+img {
+  width: 100%;
+}
+body{
+  color: var(--text-color)
+}
+.container{
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header{
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+#menu-icon{
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
+  display: none;
+}
+.logo{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.logo span{
+  color: var(--main-color);
+}
+.navbar{
+  display: flex;
+  column-gap: 2rem;
+}
+.navbar a{
+  color: var(--text-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar a:hover, .navbar .active{
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+#search-icon{
+  font-size: 24px;
+  cursor: pointer;
+}
+.search-box{
+  position: absolute;
+  top: 110%;
+  right: 0;
+  left: 0;
+  background: var(--bg-color);
+  box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+  border: 1px solid var(--main-color);
+  border-radius: 0.5rem;
+  clip-path: circle(0% at 100% 0%);
+}
+.search-box.active{
+  clip-path: circle(144% at 100% 0%);
+  transition: 0.4s;
+}
+.search-box input{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+.home-content{
+  min-height: 640px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  
+}
+.home-text h1{
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.home-text p{
+  margin-bottom: 1rem;
+}
+.btn{
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background: var(--text-color);
+  color: var(--bg-color);
+  padding: 16px 24px;
+  border-radius: 0.4rem;
+}
+.btn .bx{
+  font-size: 1.0rem;
+}
+.btn:hover{
+  background: var(--main-color);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    line-height: 1,5;
+    font-family: 'poppins', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding:70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: var(--text-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0,3s ease;
+}
+.footer-col ul li a:hover{
+    color: ffffff;
+    padding-left: 10px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transform: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
